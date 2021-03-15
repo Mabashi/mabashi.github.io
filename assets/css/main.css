@@ -3976,6 +3976,16 @@ input, select, textarea {
 		padding-left: 15%;
 		padding-right: 15%;
 	}
+
+	.leaf_hover{
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	.discordBot_hover{
+		margin-left: 15% !important;
+		margin-right: 15% !important;
+	}
 }
 
 @media only screen and (min-width: 980px) {
@@ -4049,4 +4059,61 @@ ul li img {
 	width: 12px;
 	position: relative;
 	left: -7%;
+}
+
+.all_certifications {
+	display: inline;
+	width: 100%;
+}
+
+.certifications {
+	float: left;
+	background-size: contain;
+}
+
+.certifications img {
+	width: 150px;
+}
+
+.leaf_hover {
+	position: absolute;
+	top: -5px;
+	opacity: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	margin-top: 1%;
+}
+
+.leaf_hover:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+	z-index: 10;
+	transition: .25s ease;
+}
+
+.leaf_text {
+	font-weight: bold;
+}
+
+.discordBot_hover {
+	position: absolute;
+	top: -5px;
+	opacity: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	margin-top: 1%;
+	margin-left: 20%;
+}
+
+.discordBot_hover:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+	z-index: 10;
+	transition: .25s ease;
+}
+
+.discordBot_text {
+	font-weight: bold;
 }

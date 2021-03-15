@@ -103,4 +103,81 @@
 	});
 	}
 
+	/* CUSTOM */
+	var totalWidth = 0;
+	var totalElements = 0;
+
+	$('.certifs').each(function(index) {
+		totalWidth += parseInt($(this).width(), 10);
+	});
+
+	$('.certifications').each(function(index) {
+		totalElements += 1;
+	});
+
+	var eachElement = totalWidth/totalElements;
+
+	$(".certifications img").css("width", eachElement + "px");
+
+	$(".leaf_hover").css({
+		'width': ($(".leaf_img").width() + 'px')
+	});
+
+	var leaf_text_height = $(".leaf_text").height()
+	var leaf_margin_top = ($(".leaf_img").height() - leaf_text_height)/2
+	$(".leaf_text").css({
+		'margin-top': (leaf_margin_top + 'px')
+	});
+
+	$(".discordBot_hover").css({
+		'width': ($(".discordBot_img").width() + 'px')
+	});
+
+	var discordBot_text_height = $(".discordBot_text").height()
+	var discordBot_margin_top = ($(".discordBot_img").height() - discordBot_text_height)/2
+	$(".discordBot_text").css({
+		'margin-top': (discordBot_margin_top + 'px')
+	});
+
+	window.onresize = function(event) {
+		var totalWidth = 0;
+		var totalElements = 0;
+
+		$('.certifs').each(function(index) {
+			totalWidth += parseInt($(this).width(), 10);
+		});
+
+		$('.certifications').each(function(index) {
+			totalElements += 1;
+		});
+
+		var eachElement = totalWidth/totalElements;
+
+		$(".certifications img").css("width", eachElement + "px")
+
+		$(".leaf_hover").css({
+			'width': ($(".leaf_img").width() + 'px')
+		});
+
+		var leaf_text_height = $(".leaf_text").height()
+		var leaf_margin_top = ($(".leaf_img").height() - leaf_text_height)/2
+		$(".leaf_text").css({
+			'margin-top': (leaf_margin_top + 'px')
+		});
+
+		$(".discordBot_hover").css({
+			'width': ($(".discordBot_img").width() + 'px')
+		});
+
+		var discordBot_text_height = $(".discordBot_text").height()
+		var discordBot_margin_top = ($(".discordBot_img").height() - discordBot_text_height)/2
+		$(".discordBot_text").css({
+			'margin-top': (discordBot_margin_top + 'px')
+		});
+	};
+
+	
+
+
+
 })(jQuery);

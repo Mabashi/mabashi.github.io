@@ -1,5 +1,32 @@
 RewriteEngine On
 
+# Deny access to filenames starting with dot(.)
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
 	## http -> https
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,NE,QSA]
+
+# Disable directory browsing 
+Options -Indexes
+
+# Hide the contents of directories
+IndexIgnore *
+
+# Deny access to files with extensions .ini, .psd, .log, .sh
+<FilesMatch "\.(ini|psd|log|sh)$">
+Order allow,deny
+Deny from all
+
+</FilesMatch>
+
+# Password protect files
+#<FilesMatch "^(execute|index|myfile|anotherfile)*$">
+#AuthType Basic
+#AuthName "Mypassword"
+#AuthUserFile /www/.htpasswd
+#Require valid-user
+#</FilesMatch>

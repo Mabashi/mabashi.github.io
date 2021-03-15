@@ -12,6 +12,14 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" href="images/icon.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta property="og:title" content="Accueil" />
+		<meta property="og:site_name" content="Firat KOYUNCU" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Site afin de retracer mon parcours" />
+		<meta property="og:url" content="https://firatkoyuncu.fr" />
+		<meta property="og:image" content="https://firatkoyuncu.fr/images/icon.png" />
+		<meta property="og:locale" content="fr_FR" />
+		<meta name="theme-color" content="#323234" />
 	</head>
 	<body class="landing is-preload">
 
@@ -21,9 +29,11 @@
 				<!-- Header -->
 					<header id="header" class="alt">
 						<h1><a href="index.html">Firat KOYUNCU</a></h1>
+						<!--
 						<nav id="nav">
 							<ul>
 								<li class="special">
+									
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
@@ -37,6 +47,7 @@
 								</li>
 							</ul>
 						</nav>
+						-->
 					</header>
 
 				<!-- Banner -->
@@ -53,13 +64,13 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Sur ce site, vous aurez accès à mon CV, aux projets réalisés.<br /></h2>
+								<h2>Sur ce site, vous aurez accès à mon CV ainsi qu'à l'ensemble des projets réalisés.<br /></h2>
 								<p>Depuis mes débuts dans le domaine, mon implication et ma motivation m'ont permis de prendre part à des projets et expériences exceptionnels. Prenez le temps de découvrir mon portfolio. Vous y trouverez une collection de mes collaborations, mes travaux commandés et mes projets personnels.</p>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon solid fas fa-server major style1"><span class="label">Dolor</span></span></li>
-								<li><span class="icon solid fas fa-code major style2"><span class="label">Dolor</span></span></li>
-								<li><span class="icon solid fas fa-gamepad major style3"><span class="label">Lorem</span></span></li>
+								<li><span class="icon solid fas fa-server major style1"><span class="label">SysAdmin</span></span></li>
+								<li><span class="icon solid fas fa-code major style2"><span class="label">Coding</span></span></li>
+								<li><span class="icon solid fas fa-gamepad major style3"><span class="label">Gaming</span></span></li>
 							</ul>
 						</div>
 					</section>
@@ -99,7 +110,7 @@
 							<ul class="features">
 								<li class="icon fa-paper-plane">
 									<h3>Déploiement</h3>
-									<p class="not-margin">Puppet & Rundeck</p><p>Ansible</p>
+									<p class="not-margin">Puppet</p><p>Rundeck<br>Ansible</p>
 								</li>
 								<li class="icon solid fa-laptop">
 									<h3>Système</h3>
@@ -132,7 +143,7 @@
 						<p>Vous trouverez en dessous la liste de mes expériences</p>
 					</header>
 					<section class="spotlight">
-						<div class="image renater"><img src="images/logo_RENATER.png" alt="" /></div><div class="content">
+						<div class="image renater"><a href="https://www.renater.fr"><img src="images/logo_RENATER.png" alt="" /></a></div><div class="content">
 							<h2>RENATER</h2>
 							<p>Administrateur Système et Réseaux </p>
 							<p>
@@ -159,13 +170,31 @@
 							<p>Vous trouverez en dessous la liste de toutes mes compétences</p>
 						</header>
 						<section class="spotlight">
-							<div class="image leaf"><img src="images/leaf.jpg" alt="" /></div><div class="content">
+							<div class="image leaf">
+								<img class="leaf_img" src="images/leaf.jpg" alt="" />
+								
+								<a href="./leaf.html">
+								<div class="leaf_hover">
+									<div class="leaf_text">Pour plus de détails</div>
+								</div>
+								</a>
+							</div>
+							<div class="content">
 								<h2>Leaf</h2>
 								<p>Gestionnaire de mots de passe </p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/bot.jpg" alt="" /></div><div class="content">
+							<div class="image">
+								<img class="discordBot_img" src="images/bot.jpg" alt="" />
+
+								<a href="./discordbot.html">
+								<div class="discordBot_hover">
+										<div class="discordBot_text">Pour plus de détails</div>
+								</div>
+								</a>
+							</div>
+							<div class="content">
 								<h2>Bots Discord</h2>
 								<p>Création de plusieurs bots Discord sous le langage JavaScript</p>
 							</div>
@@ -185,11 +214,13 @@
 								<p class="not-margin">Anglais : C1. TOEIC : 800</p>
 								<p>Turc : B1</p>
 							</li>
-							<li class="icon solid fa-certificate">
+							<li class="icon solid fa-certificate certifs">
 								<h3>Certifications</h3>
-								<img href="./images/itil.jpg" alt="">
-								<img href="./images/mooc_gdp.png">
-								<img href="./images/ccna.png">
+								<div class="all_certifications">
+									<div class="certifications itil"><img src="./images/itil.png"></div>
+									<div class="certifications gdp"><img src="./images/mooc_gdp.png"></div>
+									<div class="certifications ccna"><img src="./images/ccna.png"></div>
+								</div>
 							</li>
 							<li class="icon solid fa-map-marker">
 								<h3>Centres d'intérêt</h3>
