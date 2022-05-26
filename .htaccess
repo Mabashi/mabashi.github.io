@@ -20,7 +20,11 @@ IndexIgnore *
 <FilesMatch "\.(ini|psd|log|sh)$">
 Order allow,deny
 Deny from all
+</FilesMatch>
 
+# Set Cache control expiration
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
 
 # Password protect files
